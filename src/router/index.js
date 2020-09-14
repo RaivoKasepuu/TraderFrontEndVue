@@ -11,6 +11,13 @@ const routes = [
     component: Home
   },
   {
+    path: '/raivofront',
+    name: 'RaivoFront',
+    component: function () {
+      return import(/* webpackChunkName: "about" */ '../views/RaivoFront.vue')
+    }
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting
